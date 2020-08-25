@@ -1,0 +1,2 @@
+# （name,course,point）写一个sql：找出所有课分数都大于80分的学生的名字
+select A.name from student A group by A.name having MIN(A.course)> 80;

@@ -1,4 +1,4 @@
-package 数据结构与算法.DP.面试题0811硬币;
+package Leetcode.DP;
 
 /**
  * @ClassName Solution

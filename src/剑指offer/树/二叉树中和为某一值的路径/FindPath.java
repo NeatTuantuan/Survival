@@ -43,7 +43,6 @@ public class FindPath {
         if (root == null || root.val > target){
             return;
         }
-
         list.add(root.val);
         target -= root.val;
         //当target为0且当前节点左右子树为空时，说明已经遍历到叶子结点且该路径上的值之和等于target

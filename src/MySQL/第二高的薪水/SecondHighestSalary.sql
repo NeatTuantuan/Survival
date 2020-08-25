@@ -6,3 +6,8 @@
  */
 
 select IFNULL((select distinct Salary from Employee order by Salary DESC Limit 1,1) ,NULL)as SecondHighestSalary;
+
+select A.Name as Customers
+from Customers A left join Orders B
+    on A.Id = B.CustomerId
+where B.Id is null

@@ -13,7 +13,9 @@ import java.util.Map;
  * @Attention Copyright (C), 2004-2019, BDILab, XiDian University
  **/
 public class LRU {
+
     CashMap cashMap;
+
     public LRU(int capacity) {
         cashMap = new CashMap(capacity);
     }
@@ -35,7 +37,9 @@ public class LRU {
 }
 
 class CashMap extends LinkedHashMap<Integer,Integer>{
+
     private int MAX;
+
     CashMap(int max) {
         this.MAX = max;
     }

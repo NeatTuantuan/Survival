@@ -5,4 +5,5 @@ Address(AddressId,PersonId, City, State)
 
 left join:左连接，获取左表的所有记录，即使右表没有记录对应匹配记录，为空
  */
-select p.FirstName,p.Lastname,a.City,a.State from Person p left join Address a on p.PersonId = a.PersonId
+select p.FirstName,p.Lastname,a.City,a.State from Person p left join Address a on p.PersonId = a.PersonId;
+
